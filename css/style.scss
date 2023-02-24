@@ -1,0 +1,36 @@
+@import "utilities";
+@import "home";
+@import "navbar";
+@import "table";
+@import "computer";
+@import "footer";
+@import "form";
+
+.catalogue {
+  h2 {
+    color: red;
+  }
+  .catalogue_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    img {
+      min-width: 200px;
+      min-height: 200px;
+    }
+    .image_overlay {
+      overflow: $img-hidden;
+      display: flex;
+      justify-content: center;
+    }
+    .images {
+      transition: $img-transition;
+      align-self: center;
+    }
+    .images:hover {
+      transform: $img-scale;
+    }
+  }
+}
+
+@import "media";

@@ -1,0 +1,96 @@
+/* Header=================================================== */
+.header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: transparent;
+
+  .nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_logo {
+    font-size: 2rem;
+  }
+
+  .nav_logo,
+  .nav_toggle {
+    color: $white-color;
+  }
+
+  .nav_logo {
+    font-weight: $font-semi-bold;
+  }
+
+  .nav_toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .nav_menu {
+    position: relative;
+  }
+
+  .nav_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  .nav_link {
+    color: $darktext-color;
+    font-weight: $font-semi-bold;
+    text-transform: uppercase;
+  }
+
+  .nav_link:hover {
+    color: $white-color;
+  }
+
+  @media (max-width: 767px) {
+    .nav_menu {
+      position: fixed;
+      background-color: black;
+      top: 0;
+      right: -100%;
+      width: 50%;
+      height: 100%;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+      padding: 3rem;
+      transition: 0.4s;
+    }
+  }
+
+  .nav_close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: $white-color;
+    cursor: pointer;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+}
+
+/* show menu ==================================================== */
+
+.scroll-header {
+  background-color: black;
+  box-shadow: 0 0 4px hsla(0, 64%, 15%, 0.15);
+}
+
+.scroll-header .nav_logo,
+.scroll-header .nav_toggle {
+  color: $title-color;
+}
+
+/* Nav==================================================== */

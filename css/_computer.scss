@@ -1,0 +1,102 @@
+// Computer1
+.computer1 {
+  display: flex;
+  text-align: center;
+  background-color: $dark-gray;
+  color: $white-color;
+
+  h2 {
+    font-size: $h2-font-size;
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .computer_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_overlay {
+    overflow: $img-hidden;
+  }
+  .images {
+    transition: $img-transition;
+  }
+  .images:hover {
+    transform: $img-scale;
+  }
+}
+
+// Computer2
+.computer2 {
+  display: flex;
+  text-align: center;
+  background-color: $body-color;
+  color: $white-color;
+
+  h2 {
+    font-size: $h2-font-size;
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .computer_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_overlay {
+    overflow: $img-hidden;
+  }
+  .images {
+    transition: $img-transition;
+  }
+  .images:hover {
+    transform: $img-scale;
+  }
+}
+// Computer3
+.computer3 {
+  display: flex;
+  text-align: center;
+  background-color: $dark-gray;
+  color: $white-color;
+
+  h2 {
+    font-size: $h2-font-size;
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  .computer_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_overlay {
+    overflow: $img-hidden;
+  }
+  .images {
+    transition: $img-transition;
+  }
+  .images:hover {
+    transform: $img-scale;
+  }
+}
